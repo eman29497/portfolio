@@ -1,0 +1,269 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; /* Black background */
+  color: white;
+  height: 80px;
+  padding: 0 50px;
+  font-family: Arial, sans-serif;
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px; /* Links ke darmiyan gap */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3b82f6; /* Hover karne par blue color */
+}
+.hero-container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40 20px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #0070f3; /* Blue color */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+}
+
+.btn-secondary {
+  padding: 12px 25px;
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 50px 0;
+  background-color: black; /* White background taake clean lage */
+  border-top: 3px solid #eaeaea; /* Ek bariki si line jo section ko alag karegi */
+  margin-top: 100px; /* Hero section se thoda gap rakhne ke liye */
+  color: white;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-content p {
+  color: #666; /* Halka grey color copyright text ke liye */
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px; /* Links ke darmiyan gap */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #1a1a1a; /* Dark color links ke liye */
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0070f3; /* Hover par wahi blue color jo aapke naam ka hai */
+  text-decoration: underline;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column; /* Mobile par links ek ke niche ek ayenge */
+    align-items: center;
+    gap: 10px;
+  }
+}
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  min-height: auto;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  margin-top: 20px;
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.about-card {
+  background: #fdfdfd;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 5px solid #0070f3; /* Blue accent line */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-card h3 {
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-details {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #f9f9f9;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: 2px solid #0070f3;
+  background: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-item h3 {
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+.social-pills {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-pills span {
+  padding: 5px 15px;
+  background: #0070f3;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
